@@ -4,6 +4,8 @@ apk update
 apk add
 
 # setup bind
+mkdir /var/cache/bind
+chown -R named:named /var/cache/bind
 vi bind/named.conf
 mv bind/named.conf /etc/bind/named.conf
 rc-update add named
