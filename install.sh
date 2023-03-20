@@ -1,5 +1,5 @@
 # Install Packages
-sort -u alpine/world /etc/apk/world > /etc/apk/world
+sort -u alpine/world /etc/apk/world -o /etc/apk/world
 apk update
 apk add
 
