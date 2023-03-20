@@ -16,3 +16,9 @@ curl https://boot.netboot.xyz/ipxe/netboot.xyz.efi --output /var/tftpboot/netboo
 # Setup kea
 vi kea/kea-dhcp4.conf  
 mv kea/kea-dhcp4.conf /etc/kea/kea-dhcp4.conf
+
+# Make enable scripts executable
+chmod +x enable.sh
+chmod +x enable-named.sh
+chmod +x enable-tftpd.sh
+chmod +x enable-kea.sh
